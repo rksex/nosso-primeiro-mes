@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style-book.css">
+  <link rel="shortcut icon" href="image.png" type="image/x-icon">
+  <title>1° Mês juntos</title>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+  <canvas id="canvas" style="position: fixed; top: 0; left: 0; pointer-events: none;"></canvas>
+  <div class="book">
+
+    <!-- <div class="cover" onclick="turnPage()">
+      <p>COM TODO CARINHO</p>
+      <h2>Nossa Historia<br><span id="texto">O Inicio</span></h2>
+      <p>Sarah & Henrique</p>
+    </div> -->
+
+    <div class="content" id="page-1">
+      <div class="title-page">
+        <p>12 de Outubro de 2024</p>
+
+      </div>
+
+      <div class="conteudo">
+        <p>Oi, amor, tudo bem? Espero que sim! Desde já, quero te agradecer. Você deve estar se perguntando: agradecer pelo quê? Bom, vou te mostrar o porquê. Vamos lá…</p>
+      </div>
+      <div class="navigation">
+        <button onclick="prevPage()" disabled style="display: block; opacity: 0;"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="nextPage()"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="content" id="page-2">
+      <div class="title-page">
+        <p>12 de Outubro de 2024</p>
+
+      </div>
+
+      <div class="conteudo">
+        <p>Desde que você voltou para a minha vida, tudo mudou. Tudo começou de uma forma diferente – exceto as brigas, mas isso é só questão de nos entendermos melhor, algo pelo qual estamos lutando. Desde que você voltou a preencher meu coração, tudo mudou. Eu sempre soube que era você a mulher com quem eu iria me casar, a mulher com quem vou formar a melhor família do mundo, a mulher que vai estar ao meu lado quando o mundo desabar, aquela que, independente de qualquer circunstância, não vai me abandonar. E pode ter certeza, amor, por mais que eu sempre te critique, você me faz o homem mais feliz do mundo, sabia? Isso é raro hoje em dia, mas você me completa de um jeito que ninguém nunca completou.
+        </p>
+      </div>
+      <div class="navigation">
+        <button onclick="prevPage()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="nextPage()"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="content" id="page-3">
+      <div class="title-page">
+        <p>12 de Outubro de 2024</p>
+
+      </div>
+
+      <div class="conteudo">
+        <p>Você me trouxe de volta a esperança de lutar por alguém, de ter uma razão, de nunca desistir, mesmo que as coisas fiquem difíceis. Eu quero lutar por você. Você merece todo o amor do mundo, e vou lutar dia após dia para te dar o máximo que eu puder. Você merece ser tratada da melhor forma, merece ser mimada, e estou disposto a fazer tudo por você, porque você é a coisa mais valiosa para mim. É com você que quero ficar o resto da minha vida, então é meu papel cuidar bem de quem eu amo. E eu te amo muito.
+        </p>
+      </div>
+      <div class="navigation">
+        <button onclick="prevPage()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="nextPage()"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="content" id="page-4">
+      <div class="title-page">
+        <p>12 de Outubro de 2024</p>
+
+      </div>
+
+      <div class="conteudo">
+        <p>Às vezes, sinto que faço pouco comparado ao quanto você merece, mas uma coisa eu sei: nunca vou desistir de você. Você me tem por completo. Isso até me dá medo, porque nunca consegui ser assim com ninguém – até você chegar e mudar tudo. Por isso, te agradeço. Eu queria te emprestar meus olhos para que você visse o que eu vejo: o quanto você é valiosa, amorosa, carinhosa, fofinha, meiga, romântica e, além de tudo, a beleza que não existe igual. Você é muito linda.
+        </p>
+      </div>
+      <div class="navigation">
+        <button onclick="prevPage()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="nextPage()"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="content" id="page-5">
+      <div class="title-page">
+        <p>12 de Outubro de 2024</p>
+
+      </div>
+
+      <div class="conteudo">
+        <p>Amor, sei que esses últimos dias foram cheios de conflitos, brigas, e sei que muitas foram culpa minha. Estou tentando ser mais comunicativo com você. Às vezes, fico com medo de tocar em certos assuntos, temendo que você se irrite e não entenda, ou que simplesmente ignore. Aí, nem volto no assunto. Mas, amor, são coisas que podemos resolver, sabe? Lembro até hoje do dia em que voltamos a nos falar e você disse que queria lutar por nós, que queria fazer dar certo. Eu quase chorei, porque, depois de tanto tempo tentando, foi a primeira vez que senti algo diferente, algo que realmente iria acontecer.
+        </p>
+      </div>
+      <div class="navigation">
+        <button onclick="prevPage()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="nextPage()"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    
+    <div class="content" id="page-6">
+      <div class="title-page">
+        <p>12 de Outubro de 2024</p>
+
+      </div>
+
+      <div class="conteudo">
+        <p>Amor, por mais que eu seja grudento, irritante, inseguro, ciumento, por favor, não desista de mim. Sei que minha forma de demonstrar sentimentos é intensa, que sou obcecado por você, mas não de um jeito ruim. Quero cuidar de você, te dar todo o carinho e amor. Sei que demonstramos de formas diferentes – você gosta do seu espaço – mas vamos tentar fazer algo que nos encaixe e nos aproxime ainda mais.
+        </p>
+      </div>
+      <div class="navigation">
+        <button onclick="prevPage()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="nextPage()"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="content" id="page-7">
+      <div class="title-page">
+        <p>12 de Outubro de 2024</p>
+
+      </div>
+
+      <div class="conteudo">
+        <p><b>Vida, sabe como eu me imagino daqui a alguns anos?</b> <br><br>
+
+          Me imagino acordando em um domingo de manhã, às 7h, ao lado da pretinha mais linda do mundo. Eu levanto, acordo nossos filhos para ajudarem a fazer o seu café da manhã e depois te acordo para te mimar. Vejo nós sentados à mesa, todos juntos, conversando sobre o dia ou planejando o que vamos fazer. Imagino uma noite de sábado no cinema com você. Nunca fui ao cinema, então acho que cada experiência vai ser única, porque é com você que tudo vai se realizar. Imagino a gente feliz, vendo o sorriso belíssimo da minha esposa e nossos sonhos realizados. Mas o sonho que mais priorizo – e que, se realizar, me fará ainda mais feliz – sabe qual é? O de te fazer a mulher mais feliz do mundo, de te levar ao altar e dizer com grande orgulho e felicidade: <b>“Sim, eu aceito essa mulher na minha vida para sempre.”</b>
+          
+        </p>
+      </div>
+      <div class="navigation">
+        <button onclick="prevPage()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="nextPage()"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="content" id="page-8">
+      <div class="title-page">
+        <p>12 de Outubro de 2024</p>
+
+      </div>
+
+      <div class="conteudo">
+        <p>Sempre disse ao TH, nas vezes que terminamos: <b>“Amigo, eu ainda vou fazer essa mulher feliz, vou transformar a vida dela da melhor forma possível.”</b> Eu não preciso dizer que sou completamente apaixonado por você, porque acho que você já sabe. Mas sou muito, muito apaixonado por você. Você pode achar que é maluquice ou até duvidar se merece, mas eu sempre vou afirmar com certeza: sim, você merece! Sinto que tudo o que faço ainda é pouco para o que você realmente merece.
+        </p>
+      </div>
+      <div class="navigation">
+        <button onclick="prevPage()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="nextPage()"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="content" id="page-9">
+      <div class="title-page">
+        <p>12 de Outubro de 2024</p>
+
+      </div>
+
+      <div class="conteudo">
+        <p>Eu quero que você me deixe ser o amor da sua vida para sempre, que me deixe cuidar de você da forma que você merece, te mimar. Posso não ter muito dinheiro, mas farei de tudo para ver o seu sorriso. Quero ser o homem que você tem ciúmes e, se alguém perguntar, que você possa dizer: “Esse é o motivo do meu sorriso nunca sumir!” Amor, não quero que você tenha medo de me amar. Quero que você se sinta segura ao meu lado, que confie em mim de olhos fechados, porque estou aqui para não vacilar com você.
+        </p>
+      </div>
+      <div class="navigation">
+        <button onclick="prevPage()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="nextPage()"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="content" id="page-10">
+      <div class="title-page">
+        <p>12 de Outubro de 2024</p>
+
+      </div>
+
+      <div class="conteudo">
+        <p>Sabe, durante todo esse tempo em que você está na minha vida, muita coisa aconteceu entre nós, coisas boas e ruins, mas sempre tive uma certeza: é você e sempre será você. A mulher que me conquistou com esse sorriso bobo, com esses olhares fofos, com esse carisma, com seu jeitinho, com a forma como se estressa comigo. <b>Você! Com toda certeza, é você!</b>
+        </p>
+      </div>
+      <div class="navigation">
+        <button onclick="prevPage()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="nextPage()"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="content" id="page-11">
+      <div class="title-page">
+        <p>12 de Outubro de 2024</p>
+
+      </div>
+
+      <div class="conteudo">
+        <p>Promete para mim que nunca vai me abandonar? Que nunca vai desistir da gente? Sei que posso ser complicado, ciumento e que, às vezes, não sei lidar com certas situações, mas me ajuda a melhorar. Juntos somos melhores do que sozinhos, certo?</p>
+      </div>
+      <div class="navigation">
+        <button onclick="prevPage()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="nextPage()"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="content" id="page-12">
+      <div class="title-page">
+        <p>12 de Outubro de 2024</p>
+
+      </div>
+
+      <div class="conteudo">
+        <p>Eu te amo, Sarah. Muito obrigado por fazer deste homem, que te estressa dia após dia, o homem mais feliz do mundo. Obrigado por não desistir de mim, por me mostrar que, no amor, nunca haverá um fim. Que tudo isso que estamos vivendo – o amor, o carinho, o bem – só se multiplique e nos conecte ainda mais. Que Deus, acima de tudo, nos guie pelo caminho certo. Te amo, e que venham muitos e muitos meses de união entre nós, porque sei que, se lutarmos juntos, vamos realizar todos os nossos sonhos.</p>
+      </div>
+      <div class="navigation">
+        <button onclick="prevPage()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="nextPage()"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="content" id="page-13">
+      <div class="title-page">
+        <p>RKzin</p>
+
+      </div>
+
+      <div class="conteudo">
+        <p>Posso te pedir uma coisa? Cuida bem do Henrique. Sei que vocês já passaram por muita coisa juntos – muitas brigas e desentendimentos –, mas pode ter certeza: ele é um cara legal. Sim, ele pode ser insuportável às vezes, mas não desiste dele. Ele está disposto a fazer tudo por você. Você é a única pessoa por quem ele sempre tenta agradar. É só olhar ao redor, olhar como ele te trata, a forma como ele olha para você, como ele se sente confortável ao estar com você. Pode ter certeza de que, se você parar e ficar olhando para ele, consegue ver os olhos dele brilhando por você. Ele te ama como nunca amou ninguém.</p>
+      </div>
+      <div class="navigation">
+        <button onclick="prevPage()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="nextPage()"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="content" id="page-14">
+      <div class="title-page">
+        <p>RKzin</p>
+
+      </div>
+
+      <div class="conteudo">
+        <p>Eu sei que vocês têm muito o que corrigir no relacionamento de vocês, mas pode ter certeza de que ele está disposto a corrigir tudo por você. Seja mais paciente com ele. Muitas vezes, ele não sabe como resolver as coisas, e, quando tenta, acaba atrapalhando tudo porque pensa em tudo, mas, no fim, não faz nada do que planejou. Vocês têm muito a aprender, mas sabe? Vocês têm um ao outro, e isso é maravilhoso. Só vocês podem mudar o que precisa ser mudado.</p>
+      </div>
+      <div class="navigation">
+        <button onclick="prevPage()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="nextPage()"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="content" id="page-15">
+      <div class="title-page">
+        <p>RKzin</p>
+
+      </div>
+
+      <div class="conteudo">
+        <p>Ensine a ele, e seja paciente, porque ele é meio lerdo às vezes. Posso te contar um segredo? Ele sempre pensa em você. Sabe no que ele pensa? Em como você está, se deveria te mandar uma mensagem só para você sentir que ele está ali. Ele pensa em como foi o seu dia, se você já comeu, se já tomou água ou até mesmo se se irritou no trabalho. Ele torce muito pelo seu sucesso. Talvez ele não tenha dito isso claramente, mas é só reparar nos gestos de incentivo que ele faz. Lembra quando você foi fazer aquela entrevista? Ele ficou muito ansioso para você contar tudo. Lembra de como ele te ligou no dia? Qual foi a reação dele?
+        </p>
+      </div>
+      <div class="navigation">
+        <button onclick="prevPage()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="nextPage()"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="content" id="page-16">
+      <div class="title-page">
+        <p>RKzin</p>
+
+      </div>
+
+      <div class="conteudo">
+        <p>Ele te admira muito, pode ter certeza disso. Vocês são muito fofos juntos. E quando falo “vocês”, estou falando do Henrique e da Sarah... Vocês são um casal incrível. Sarah, não deixe que as inseguranças dele estraguem tudo. Ajude-o a mudar isso e tenha paciência com ele, porque ele está se esforçando, mesmo que você ainda não veja resultados. Lute por ele. Ele merece alguém que faça de tudo por ele... Como ele nunca teve antes. Agora ele tem você. <b>Lembre-se…</b>
+        </p>
+      </div>
+      <div class="navigation">
+        <button onclick="prevPage()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="nextPage()"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="content" id="page-17">
+      <div class="title-page">
+        <p>TE AMO MUITOO</p>
+
+      </div>
+
+      <div class="conteudo">
+        <p><b>EU, HENRIQUE, TE AMO COM TODO O MEU CORAÇÃO, E PODE TER CERTEZA QUE VOU LUTAR POR VOCÊ ATÉ O FIM. OBRIGADO, SARAH, POR TUDO. VOCÊ É E SEMPRE SERÁ O GRANDE AMOR DA MINHA VIDA!</b>
+        </p>
+      </div>
+      <div class="navigation">
+        <button onclick="prevPage()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="nextPage()"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="content" id="page-18">
+      <div class="title-page">
+        <p>1° mês juntos</p>
+
+      </div>
+
+      <div class="conteudo">
+        <img src="image2.png" style="width: 100%;"> 
+        <P>Com tudo isso, Ficou mais claro saber o pq continuo aqui?...</P>
+        <br>
+        <P><b>Pensa nisso...</b></P>
+      </div>
+      <div class="navigation">
+        <button onclick="prevPage()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="nextPage()" disabled style="display: block; opacity: 0;"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="player-container">
+      <iframe width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/328183318&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"></iframe>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
